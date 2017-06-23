@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.sleeper.MainActivity">
+    
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/ic_bluetooth"
+       android:padding="16dp"
+       android:clickable="true"
+       android:id="@+id/BT_btn"
+       android:foreground="?android:selectableItemBackground"
+       android:tint="#aaa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOT CONNECTED"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#888"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LED OFF"
+        android:textColor="#222"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/turn_on_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Turn ON" />
+
+        <Button
+            android:id="@+id/turn_off_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Turn OFF" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#888"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/function_on"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="10dp"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="6dp"
+                android:tint="#d33"
+                android:src="@drawable/ic_favorite"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HEART RATE FUNCTION ON"
+                android:textColor="#222"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/function_off"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="10dp"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="6dp"
+                android:tint="@android:color/darker_gray"
+                android:src="@drawable/ic_favorite"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HEART RATE FUNCTION OFF"
+                android:textColor="#222"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:background="#888"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heart_rate_text"
+        android:text="HEART RATE: -"
+        android:textColor="#222"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>
